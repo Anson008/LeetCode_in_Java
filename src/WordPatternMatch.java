@@ -2,15 +2,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WordPatternMatch {
-    public static void main(String[] args) {
-        // Write your solution here
+    public void runTest(){
         String s1 = "aaa";
         String p1 = "ab";
         Map<Character, String> mapping = new HashMap<>();
         System.out.println("Is match? " + isMatch(s1, 0, p1, 0, mapping));
     }
 
-    public static boolean isMatch(String word, int i, String pattern, int j,
+    public boolean isMatch(String word, int i, String pattern, int j,
                                   Map<Character, String> map)
     {
         int n = word.length(), m = pattern.length();
