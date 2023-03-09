@@ -1,3 +1,5 @@
+package dsa.PriorityQueue;
+
 import java.util.*;
 
 public class TopKFrequentWords {

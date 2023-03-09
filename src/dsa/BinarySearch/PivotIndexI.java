@@ -1,3 +1,5 @@
+package dsa.BinarySearch;
+
 public class PivotIndexI {
     public int findPivotIndex(int[] array){
         int n = array.length;

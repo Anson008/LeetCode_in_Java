@@ -1,7 +1,4 @@
-import dsa.sort.LC215;
-import dsa.sort.QuickSort;
-
-import java.util.Arrays;
+import dsa.Sort.LC215;
 
 public class HelloAlgorithm {
     public static void main(String[] args){

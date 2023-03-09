@@ -1,7 +1,5 @@
-package dsa.sort;
+package dsa.Sort;
 
-
-import java.util.Arrays;
 
 public class QuickSort {
 

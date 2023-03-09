@@ -1,4 +1,4 @@
-package dsa.sort;
+package dsa.Sort;
 
 public class LC215 {
     public int findKthLargest(int[] nums, int k){

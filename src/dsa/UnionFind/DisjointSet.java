@@ -1,3 +1,5 @@
+package dsa.UnionFind;
+
 import java.util.*;
 
 public class DisjointSet {
