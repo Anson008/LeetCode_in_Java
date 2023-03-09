@@ -1,12 +1,14 @@
+package dsa.DynamicProgramming;
+
 public class LongestAscendingSubsequence {
     private static int[] memo;
 
     public static void main(String[] args){
         int[] arr = {5};
         int res = longest(arr);
-        System.out.println(String.format("Longest is %d", res));
+        System.out.printf("Longest is %d%n", res);
         for (int i = 0; i < memo.length; i++){
-            System.out.println(String.format("Memo[%d] = %d", i, memo[i]));
+            System.out.printf("Memo[%d] = %d%n", i, memo[i]);
         }
     }
 
