@@ -3,16 +3,7 @@ package dsa.DynamicProgramming;
 public class LongestAscendingSubsequence {
     private static int[] memo;
 
-    public static void main(String[] args){
-        int[] arr = {5};
-        int res = longest(arr);
-        System.out.printf("Longest is %d%n", res);
-        for (int i = 0; i < memo.length; i++){
-            System.out.printf("Memo[%d] = %d%n", i, memo[i]);
-        }
-    }
-
-    public static int longest(int[] array){
+    public int longest(int[] array){
         int n = array.length;
         if (n == 0)
             return 0;
@@ -32,7 +23,7 @@ public class LongestAscendingSubsequence {
         return max;
     }
 
-    private static int dfs(int[] arr, int n){
+    private int dfs(int[] arr, int n){
         if (n == 1){
             memo[n] = 1;
             return memo[n];
