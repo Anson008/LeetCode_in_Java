@@ -18,12 +18,12 @@ public class MaximumPathSumBinaryTreeI {
         int right = helper(root.right);
 
         if (root.left == null){
-            return right + root.key;
+            return right + root.val;
         }
         if (root.right == null){
-            return left + root.key;
+            return left + root.val;
         }
-        maxSum = Math.max(maxSum, left + right + root.key);
-        return Math.max(left, right) + root.key;
+        maxSum = Math.max(maxSum, left + right + root.val);
+        return Math.max(left, right) + root.val;
     }
 }

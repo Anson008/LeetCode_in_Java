@@ -33,7 +33,7 @@ public class LC144 {
 
         while (!stack.isEmpty()){
             curr = stack.pop();
-            res.add(curr.key);
+            res.add(curr.val);
             if (curr.right != null)
                 stack.push(curr.right);
             if (curr.left != null)

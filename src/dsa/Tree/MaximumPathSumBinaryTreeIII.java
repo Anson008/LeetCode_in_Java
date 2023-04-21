@@ -16,7 +16,7 @@ public class MaximumPathSumBinaryTreeIII {
 
         int left = helper(root.left);
         int right = helper(root.right);
-        maxSum = Math.max(maxSum, Math.max(root.key, Math.max(root.key + left, root.key + right)));
-        return Math.max(root.key, Math.max(root.key + left, root.key + right));
+        maxSum = Math.max(maxSum, Math.max(root.val, Math.max(root.val + left, root.val + right)));
+        return Math.max(root.val, Math.max(root.val + left, root.val + right));
     }
 }

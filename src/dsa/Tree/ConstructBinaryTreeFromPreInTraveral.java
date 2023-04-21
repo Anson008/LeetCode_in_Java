@@ -19,8 +19,8 @@ public class ConstructBinaryTreeFromPreInTraveral {
                 return null;
 
             TreeNode root = new TreeNode(preorder[preIdx++]);
-            System.out.println(root.key);
-            int index = map.get(root.key);
+            System.out.println(root.val);
+            int index = map.get(root.val);
             root.left = helper(preorder, map, inStart, index - 1);
             root.right = helper(preorder, map, index + 1, inEnd);
             return root;
