@@ -21,4 +21,8 @@ public class LC74 {
         }
         return false;
     }
+
+    public void runTest(int[][] matrix, int target){
+        System.out.println(searchMatrix(matrix, target));
+    }
 }
