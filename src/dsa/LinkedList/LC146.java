@@ -13,7 +13,7 @@ public class LC146 {
         this.capacity = capacity;
         nodeMap = new HashMap<>(capacity);
         head.next = tail;
-        tail.next = head;
+        tail.prev = head;
     }
 
     public int get(int key) {
